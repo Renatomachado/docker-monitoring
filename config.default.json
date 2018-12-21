@@ -1,0 +1,4 @@
+{
+  "SLACK_URL": "",
+  "DOCKER_SOCKET_PATH": "/var/run/docker.sock"
+}
