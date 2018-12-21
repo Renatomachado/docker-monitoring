@@ -1,6 +1,6 @@
 # Docker Monitoring
 
-## Service to capture when docker container dies and send to slack
+A service to capture when docker container dies and send a alert message to slack
 
 ## How to run
 #### On swarm mode
