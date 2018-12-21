@@ -7,6 +7,7 @@ const http = require("http");
 
 const SLACK_URL = nconf.get("SLACK_URL");
 const DOCKER_SOCKET_PATH = nconf.get("DOCKER_SOCKET_PATH");
+const AMBIENT = nconf.get("AMBIENT");
 const ALERTMANAGER_HOST = nconf.get("ALERTMANAGER_HOST");
 const ALERTMANAGER_USER = nconf.get("ALERTMANAGER_USER");
 const ALERTMANAGER_PASS = nconf.get("ALERTMANAGER_PASS");
@@ -32,7 +33,7 @@ const request = (url, options) =>
 const getMessageForDockerDie = data => ({
   text: `_At ${new Date(data.time * 1000).toLocaleString()}_: The container *${
     data.Actor.Attributes.name
-  }* DIED with exitCode: *${data.Actor.Attributes.exitCode}*`
+  }* in *${AMBIENT}*, DIED with exit code: *${data.Actor.Attributes.exitCode}*`
 });
 
 const getMessageForAlertmanager = data => ({
