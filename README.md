@@ -1,6 +1,6 @@
 # Docker Monitoring
 
-## Service to capture when docker container dies
+## Service to capture when docker container dies and send to slack
 
 ### Requires Node 10
 
