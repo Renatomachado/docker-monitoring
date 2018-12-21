@@ -20,6 +20,7 @@ docker run \
     -d --restart=always \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -e SLACK_URL="https://hooks.slack.com/services/YOUR_TOKEN_HERE"
+    -e AMBIENT="PRODUCTION"
     renatomachado/docker-monitoring:${VERSION}
 ```
 
