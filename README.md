@@ -4,4 +4,4 @@
 
 ### Requires Node 10
 
-Dont forget the `config.json` file
+Don`t forget the `config.json` file
