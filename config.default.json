@@ -1,6 +1,7 @@
 {
   "SLACK_URL": "",
   "DOCKER_SOCKET_PATH": "/var/run/docker.sock",
+  "AMBIENT": "development",
   "ALERTMANAGER_HOST": "",
   "ALERTMANAGER_USER": "",
   "ALERTMANAGER_PASS": "",
