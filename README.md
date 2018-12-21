@@ -23,3 +23,12 @@ docker run \
     -e SLACK_URL="https://hooks.slack.com/services/YOUR_TOKEN_HERE"
     renatomachado/docker-monitoring:${VERSION}
 ```
+
+
+#### Optional environment for integration with Prometheus`s AlertManager
+```
+  -e ALERTMANAGER_HOST="alert manager address" \
+  -e ALERTMANAGER_USER="alert manager user" \
+  -e ALERTMANAGER_PASS="password" \
+  -e ALERTMANAGER_LABELS="node_disk_usage,others_labels" \
+```
