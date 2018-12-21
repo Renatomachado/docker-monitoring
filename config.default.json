@@ -1,4 +1,8 @@
 {
   "SLACK_URL": "",
-  "DOCKER_SOCKET_PATH": "/var/run/docker.sock"
+  "DOCKER_SOCKET_PATH": "/var/run/docker.sock",
+  "ALERTMANAGER_HOST": "",
+  "ALERTMANAGER_USER": "",
+  "ALERTMANAGER_PASS": "",
+  "ALERTMANAGER_LABELS": ""
 }
