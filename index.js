@@ -37,10 +37,10 @@ const getMessageForDockerDie = data => ({
 });
 
 const getMessageForAlertmanager = data => ({
-  text: `_At ${new Date(data.startsAt).toLocaleString()}_: The job *${
-    data.labels.job
-  }* take an alert: *${data.labels.alertname}* \n ${
-    data.annotations.description
+  text: `_At ${new Date(data.startsAt).toLocaleString()}_: *${
+    data.labels.alertname
+  }* \n ${data.annotations.description} ${
+    data.annotations.summary ? `\n ${data.annotations.summary}` : ""
   }`
 });
 
