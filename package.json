@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dockerode": "^2.5.7"
+    "dockerode": "^2.5.7",
+    "nconf": "0.10.0"
   }
 }
