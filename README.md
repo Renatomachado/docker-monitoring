@@ -7,7 +7,6 @@ A service to capture when docker container dies and send a alert message to slac
 
 ```
 docker service create \
-    --mode global \
     --restart-condition any \
     --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock \
     -e SLACK_URL="https://hooks.slack.com/services/YOUR_TOKEN_HERE" \
