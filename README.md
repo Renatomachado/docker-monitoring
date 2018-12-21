@@ -30,5 +30,6 @@ docker run \
   -e ALERTMANAGER_HOST="alert manager address" \
   -e ALERTMANAGER_USER="alert manager user" \
   -e ALERTMANAGER_PASS="password" \
-  -e ALERTMANAGER_LABELS="node_disk_usage,others_labels" \
+  -e ALERTMANAGER_LABELS="node_disk_usage,[others_labels]" \
 ```
+
